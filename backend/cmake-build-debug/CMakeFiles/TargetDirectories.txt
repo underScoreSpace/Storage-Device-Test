@@ -1,0 +1,3 @@
+/Users/alexis/flash-drive-speed-test/backend/cmake-build-debug/CMakeFiles/backend.dir
+/Users/alexis/flash-drive-speed-test/backend/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alexis/flash-drive-speed-test/backend/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Storage Device Speed Test</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Storage Device Speed Test</h1>
+
+<h3>Select file size</h3>
+<div class="button-group">
+  <button class="file-size-btn" data-size="10485760">10 MB</button>
+  <button class="file-size-btn" data-size="104857600">100 MB</button>
+  <button class="file-size-btn" data-size="1073741824">1 GB</button>
+  <button class="file-size-btn" data-size="5368709120">5 GB</button>
+  <button class="file-size-btn" data-size="10737418240">10 GB</button>
+  <button class="file-size-btn" data-size="53687091200">50 GB</button>
+  <button class="file-size-btn" data-size="107374182400">100 GB</button>
+  <button class="file-size-btn" data-size="214748364800">200 GB</button>
+  <button class="file-size-btn" data-size="536870912000">500 GB</button>
+</div>
+
+<h3>Select buffer size</h3>
+<div class="button-group">
+  <button class="buffer-size-btn" data-size="1048576">1 MB</button>
+  <button class="buffer-size-btn" data-size="8388608">8 MB</button>
+  <button class="buffer-size-btn" data-size="16777216">16 MB</button>
+  <button class="buffer-size-btn" data-size="33554432">32 MB</button>
+  <button class="buffer-size-btn" data-size="67108864">64 MB</button>
+  <button class="buffer-size-btn" data-size="104857600">100 MB</button>
+  <button class="buffer-size-btn" data-size="1073741824">1 GB</button>
+  <button class="buffer-size-btn" data-size="4294967296">4 GB</button>
+  <button class="buffer-size-btn" data-size="8589934592">8 GB</button>
+  <button class="buffer-size-btn" data-size="17179869184">16 GB</button>
+  <button class="buffer-size-btn" data-size="34359738368">32 GB</button>
+</div>
+
+<input type="text" id="filePath" placeholder="Enter device file path">
+
+<button id="startTestButton">Start Speed Test</button>
+<div id="loader" class="loader"></div>
+<div id="results">
+  <p id="writeSpeed"></p>
+  <p id="writeLatency"></p>
+  <p id="readSpeed"></p>
+  <p id="readLatency"></p>
+  <canvas id="speedChart" width="400" height="200"></canvas>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
