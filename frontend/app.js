@@ -4,7 +4,7 @@ let selectedBufferSize = null;
 
 document.querySelectorAll('.file-size-btn').forEach(button => {
   button.addEventListener('click', function() {
-    const selectedFileSize = this.dataset.size;
+    selectedFileSize = this.dataset.size;
     document.querySelector('.file-size-btn.selected')?.classList.remove('selected');
     this.classList.add('selected');
   });
