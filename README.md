@@ -1,5 +1,6 @@
 # Storage-Device-Test
-The Storage Device Speed Test is a cross-platform application designed to measure and analyze the read and write speeds of storage devices. 
+The Storage Device Speed Test is a cross-platform application designed to measure and analyze the read and write speeds of storage devices.
+(Specifically EXTERNAL)
 It features a backend implemented in C++ and Flask to perform speed tests and handle data processing. 
 The frontend, built with HTML, CSS, and JavaScript, offers a user-friendly interface to display test results, including latency metrics, through dynamic charts created using Chart.js. 
 
